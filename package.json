@@ -1,0 +1,26 @@
+{
+  "name": "cpw2-js",
+  "version": "1.0.0",
+  "description": "CPW2: exercícios de JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "mocha": "^9.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpmhub/cpw2-js.git"
+  },
+  "homepage": "https://github.com/rpmhub/cpw2-js#readme",
+  "bugs": {
+    "url": "https://github.com/rpmhub/cpw2-js/issues"
+  },
+  "keywords": [
+    "cpw2",
+    "js"
+  ],
+  "author": "Rodrigo Prestes Machado",
+  "license": "ISC"
+}
