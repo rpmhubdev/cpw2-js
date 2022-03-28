@@ -18,5 +18,6 @@ Existem três [issues](https://github.com/rpmhub/cpw2-js/issues) (tarefas) abert
 Se você desejar verificar se o seu projeto está correto, ou seja, os testes estão passando, execute o seguinte comando na raíz do seu projeto:
 
 ```sh
+  npm install (apenas uma vez para instalar o mocha)
   npm test
 ```
