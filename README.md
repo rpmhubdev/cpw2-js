@@ -1,23 +1,39 @@
 # CPW2: JS
 
-Lista de exercícios de Javascript
-## Passos para a realização do exercício
+Lista de exercícios de JavaScript básico.
 
-  * Primeiro, faça um [*fork*](https://docs.github.com/pt/get-started/quickstart/fork-a-repo) do projeto para a sua conta no Github
-  * Depois, realize um [clone](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository) para a sua máquina local
-  * Logo, implemente as [issues](https://github.com/rpmhub/cpw2-js/issues) que foram estipuladas para esse projeto
-  * Em seguida, realize um [push](https://docs.github.com/pt/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github) da sua solução
-  * Finalmente, verifique na aba `Actions` do seu repositório no Github se os testes passaram (correção automática)
+## Exercícios
 
-🚨 Se você não souber como realizar operações como *fork*, *clone* e *push* no Github, por favor, assistam o [vídeo](https://www.youtube.com/watch?v=SDowGAvT0l0) com dicas de Git/Github.
-## Issues
+Existem três [issues/tarefas](https://github.com/rpmhub/cpw2-js/issues) abertas
+no Github do repositório original que devem ser implementadas. Estas 
+[issues](https://github.com/rpmhub/cpw2-js/issues) detalham o que deve ser 
+desenvolvidos no exercício a fim de permitir que os testes automáticos 
+(correção automática) possam passar com sucesso.
 
-Existem três [issues](https://github.com/rpmhub/cpw2-js/issues) (tarefas) abertas no Github que devem ser implementadas. Estas [issues](https://github.com/rpmhub/cpw2-js/issues) detalham o que deve ser desenvolvidos no sistema a fim de permitir que os testes automáticos (correção) possam ser realizadas com sucesso. Assim, verifique as [issues](https://github.com/rpmhub/cpw2-js/issues)para você ter uma melhor compreensão do que deve ser desenvolvido nesse projeto.
-## Dicas 💡
+## Como executar os testes? 💡
 
-Se você desejar verificar se o seu projeto está correto, ou seja, os testes estão passando, execute o seguinte comando na raíz do seu projeto:
+Se você desejar verificar se o seu projeto está correto, ou seja, se os testes 
+estão passando, abra um terminal e execute os comandos na raíz  do seu 
+projeto:
 
 ```sh
   npm install (apenas uma vez para instalar o mocha)
   npm test
 ```
+
+## Como entregar o exercício?
+
+Uma vez que os testes estejam passando, faça um 
+[commit](https://code.visualstudio.com/docs/sourcecontrol/overview#_commit) e 
+um [push](https://code.visualstudio.com/docs/sourcecontrol/overview#_remotes)
+para cofirmar a atualização do seu código. 🚨 Uma dica, você pode encontrar esses 
+comandos no menu de commandos do Visual Studio Code (Ctrl+Shift+P).
+
+Após a realização do *commit* e o *push*, você poderá ir no repositorio do seu 
+exercício e observar a aba *Pull Requests* para ver se os testes estão passando 
+também no seu repositório do exercício. O professor irá avaliar o seu código e 
+aceitar o *Pull Request* caso esteja correto.
+
+🚨 Se você quiser saber mais sobre Git e Github no VS Code asista o 
+[vídeo](https://www.youtube.com/watch?v=SDowGAvT0l0) explicativo sobre esse
+assunto.
