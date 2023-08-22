@@ -6,14 +6,15 @@
  * @returns Um array com os nomes invertidos
  */
 function invert(people){
-
+    
     // TODO
     // 1) Peça ao usuário para digitar vários nomes. Exiba na tela
     // todos os nomes digitados, porém de maneira invertida (do último para o primeiro).
     // Uma dica, você pode utilizar a função prompt para permitir que o usuário digite os
     // nomes dos usuários.
+    
 
-    return [];
+    return people.reverse();
 }
 
 /**
@@ -28,8 +29,14 @@ function mean(grades){
     // 2) Faça um programa que leia o nome e as três notas de uma disciplina de um aluno e ao final escreva
     // o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média para aprovação é igual
     // ou superior a 7.
+    var soma=0;
 
-    return 0;
+    for(var i =0;i<grades.length;i++){
+        soma+=grades[i];
+    }
+    var media = soma/3;
+
+    return media;
 }
 
 /**
@@ -45,7 +52,11 @@ function isApproved(mean){
     // o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média para aprovação é igual
     // ou superior a 7.
 
-    return "";
+    if (mean >= 7){
+        return "aprovado";
+    } else {
+        return "reprovado";
+    }
 }
 
 /**
@@ -62,7 +73,29 @@ function wide(strDate){
     // “split” de uma string que quebra a string em pedaços dado um separador como argumento da função.
     // Nesse caso, o separador é a barra (/) da data.
 
-    return "";
+    if (strDate == "") {
+        return strDate
+    }
+    if (strDate[2] != '/' || strDate[5] != '/'){
+        return ''
+    } 
+    
+    // var dataInformada = JSON.stringify(strDate);
+    
+
+
+    var dia = strDate.toString().split('/')[0];
+    var mes = strDate.toString().split('/')[1];
+    var ano = strDate.toString().split('/')[2];
+
+    var meses = ["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
+
+    var mesTextual = meses[(parseInt(mes)-1)]
+
+    return `${dia} de ${mesTextual.toString()} de ${ano}`;
+    
+
+    
 }
 
 // Trecho utilizado pelos testes
