@@ -34,7 +34,7 @@ function mean(grades){
     for(var i =0;i<grades.length;i++){
         soma+=grades[i];
     }
-    var media = soma/3
+    var media = soma/3;
 
     return media;
 }
