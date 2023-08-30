@@ -58,14 +58,22 @@ function isApproved(mean){
  * @returns Uma descrição da data informada
  */
 function wide(strDate){
-
     // TODO
     // 3) Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a data por extenso,
     // por exemplo, de "03/03/2022" para "03 de março de 2022". Dica: use a função
     // “split” de uma string que quebra a string em pedaços dado um separador como argumento da função.
     // Nesse caso, o separador é a barra (/) da data.
+    var months = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
 
-    return "";
+    var date = strDate.split("/");
+
+    if (months.includes(months[date[1] - 1])) {
+        var wideDate = strDate === "" ? "" : date[0] + " de " + months[date[1] - 1] + " de " + date[2];
+    } else {
+        var wideDate = "";
+    }
+
+    return wideDate;
 }
 
 // Trecho utilizado pelos testes
