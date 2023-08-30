@@ -6,14 +6,17 @@
  * @returns Um array com os nomes invertidos
  */
 function invert(people){
-
     // TODO
     // 1) Peça ao usuário para digitar vários nomes. Exiba na tela
     // todos os nomes digitados, porém de maneira invertida (do último para o primeiro).
     // Uma dica, você pode utilizar a função prompt para permitir que o usuário digite os
     // nomes dos usuários.
+    var invertedPeople = [];
+    for(var i = people.length - 1; i >= 0; i--){
+        invertedPeople[invertedPeople.length] = people[i];
+    }
 
-    return [];
+    return invertedPeople;
 }
 
 /**
@@ -23,13 +26,13 @@ function invert(people){
  * @returns Uma média a partir do array de notas
  */
 function mean(grades){
-
     // TODO
     // 2) Faça um programa que leia o nome e as três notas de uma disciplina de um aluno e ao final escreva
     // o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média para aprovação é igual
     // ou superior a 7.
-
-    return 0;
+    var meanGrades = (grades[0] + grades[1] + grades[2]) / grades.length;
+    
+    return meanGrades;
 }
 
 /**
@@ -39,13 +42,13 @@ function mean(grades){
  * @returns Uma string dizendo se um estudante está aprovado ou não
  */
 function isApproved(mean){
-
     // TODO
     // 2.1) Faça um programa que leia o nome e as três notas de uma disciplina de um aluno e ao final escreva
     // o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média para aprovação é igual
     // ou superior a 7.
+    var approved = mean >= 7 ? "aprovado" : "reprovado";
 
-    return "";
+    return approved;
 }
 
 /**
