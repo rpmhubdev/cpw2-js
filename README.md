@@ -2,6 +2,7 @@
 
 Lista de exercícios de JavaScript básico.
 
+
 ## Exercícios
 
 Existem três [issues/tarefas](https://github.com/rpmhubdev/cpw2-js/issues) abertas
