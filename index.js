@@ -7,14 +7,38 @@
  */
 function invert(people){
 
-    // TODO
-    // 1) Peça ao usuário para digitar vários nomes. Exiba na tela
-    // todos os nomes digitados, porém de maneira invertida (do último para o primeiro).
-    // Uma dica, você pode utilizar a função prompt para permitir que o usuário digite os
-    // nomes dos usuários.
+   // Crie um novo vetor invertido
+  var invertedNames = [];
+  
+  // Itere pelo vetor de pessoas em ordem reversa e adicione os nomes ao vetor invertido
+  for (var i = people.length - 1; i >= 0; i--) {
+    invertedNames.push(people[i]);
+  }
 
-    return [];
+  // Retorne o vetor invertido
+  return invertedNames;
 }
+
+// Solicitar ao usuário que insira os nomes e armazená-los em um vetor
+var people = [];
+var input;
+
+do {
+  input = prompt("Digite um nome (ou deixe em branco para encerrar):");
+  if (input) {
+    people.push(input);
+  }
+} while (input);
+
+// Chame a função invert para obter o vetor de nomes invertidos
+var invertedPeople = invert(people);
+
+// Exiba os nomes invertidos na tela
+console.log("Nomes invertidos:");
+console.log(invertedPeople);
+
+    
+
 
 /**
  * Essa função recebe um array de notas e retorna uma média
