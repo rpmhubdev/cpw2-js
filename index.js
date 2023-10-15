@@ -77,7 +77,7 @@ function isApproved(mean){
 function wide(strDate){
 
      // Divida a string da data usando o separador "/"
-    var dateParts = dateString.split("/");
+    var dateParts = strDate.split("/");
     
     if (dateParts.length === 3) {
       var day = dateParts[0];
